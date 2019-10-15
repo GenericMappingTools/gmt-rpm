@@ -74,6 +74,14 @@ pushd build
 %make_install -C build
 
 
+%check
+gmt --version
+gmt defaults -Vd
+gmt pscoast -R0/10/0/10 -JM6i -Ba -Ggray -ENG+p1p,blue -P -Vd > test.ps
+gmt begin && gmt coast -R0/10/0/10 -JM6i -Ba -Ggray -ENG+p1p,blue -Vd && gmt end
+export GMT_END_SHOW=off && gmt grdimage @earth_relief_60m -JH10c -Baf -pdf map
+
+
 %ldconfig_scriptlets
 
 
