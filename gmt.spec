@@ -4,7 +4,7 @@
 %endif
 
 Name:           gmt
-Version:        6.0.0rc4
+Version:        6.0.0rc5
 Release:        1%{?dist}
 Summary:        Generic Mapping Tools
 
@@ -43,9 +43,12 @@ Conflicts:      GMT-doc
 
 
 %description
-GMT is an open source collection of ~130 tools for manipulating geographic and
-Cartesian data sets and producing PostScript illustrations ranging from simple
-x-y plots via contour maps to artificially illuminated surfaces and 3D perspective views.
+GMT is an open-source collection of command-line tools for manipulating geographic
+and Cartesian data sets (including filtering, trend fitting, gridding, projecting, etc.)
+and producing PostScript illustrations ranging from simple x–y plots via contour maps
+to artificially illuminated surfaces and 3D perspective views.
+It supports many map projections and transformations and includes supporting data
+such as coastlines, rivers, and political boundaries and optionally country polygons.
 
 
 %prep
@@ -88,5 +91,7 @@ pushd build
 
 
 %changelog
+* Wed Oct 23 2019 seisman <seisman.info@gmail.com> 6.0.0rc5-1
+- Update to 6.0.0rc5
 * Fri Oct 11 2019 seisman <seisman.info@gmail.com> 6.0.0rc4-1
 - Initial package
