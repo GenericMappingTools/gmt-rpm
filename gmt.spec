@@ -4,7 +4,7 @@
 %endif
 
 Name:           gmt
-Version:        6.0.0rc5
+Version:        6.0.0
 Release:        1%{?dist}
 Summary:        Generic Mapping Tools
 
@@ -91,6 +91,8 @@ pushd build
 
 
 %changelog
+* Fri Nov 1 2019 seisman <seisman.info@gmail.com> 6.0.0-1
+- Update to 6.0.0
 * Wed Oct 23 2019 seisman <seisman.info@gmail.com> 6.0.0rc5-1
 - Update to 6.0.0rc5
 * Fri Oct 11 2019 seisman <seisman.info@gmail.com> 6.0.0rc4-1
