@@ -1,5 +1,7 @@
 # The official RPM repository for GMT
 
+[![Build Status](https://travis-ci.org/GenericMappingTools/gmt-rpm.svg?branch=master)](https://travis-ci.org/GenericMappingTools/gmt-rpm)
+
 This repository contains the RPM specfiles for the Fedora Copr build system,
 which provides a RPM package repository for Fedora/CentOS/RHEL.
 
@@ -15,3 +17,7 @@ which provides a RPM package repository for Fedora/CentOS/RHEL.
 NOTE:
 
 - EPEL 8 currently isn't supported, due to the unavailability of GDAL from EPEL 8.
+
+## References
+
+- [RPM Packaging Guide](https://rpm-packaging-guide.github.io/)
