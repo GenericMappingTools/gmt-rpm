@@ -4,16 +4,17 @@ Release:        1%{?dist}
 Summary:        Digital Chart of the World (DCW) for GMT
 
 License:        LGPLv3+
-URL:            https://www.soest.hawaii.edu/pwessel/dcw/
-Source0:        https://www.soest.hawaii.edu/pwessel/dcw/%{name}-%{version}.tar.gz
+URL:            https://github.com/GenericMappingTools/dcw-gmt
+Source0:        https://github.com/GenericMappingTools/dcw-gmt/releases/download/%{version}/%{name}-%{version}.tar.gz
 BuildArch:      noarch
 
 
 %description
-DCW-GMT is an enhancement to the original 1:1,000,000 scale vector basemap of
-the world available from the Princeton University Digital Map and Geospatial
-Information Center and from GeoCommunity at
-http://data.geocomm.com/readme/dcw/dcw.html.
+DCW-GMT is an enhancement to the original 1:1,000,000 scale vector basemap of the world,
+available from the Princeton University Digital Map and Geospatial Information Center.
+It contains more state boundaries (the largest 8 countries are now represented) than
+the original data source. Information about DCW can be found on
+Wikipedia (https://en.wikipedia.org/wiki/Digital_Chart_of_the_World).
 This data is for use by GMT, the Generic Mapping Tools.
 
 
