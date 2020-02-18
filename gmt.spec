@@ -17,7 +17,10 @@ BuildRequires:  gcc
 BuildRequires:  bash-completion
 BuildRequires:  libcurl-devel
 BuildRequires:  netcdf-devel
+# As of 20200218, EPEL-8 doesn't provide GDAL yet.
+%if 0%{?rhel} != 8
 BuildRequires:  gdal-devel
+%endif
 BuildRequires:  pcre-devel
 %if 0%{?rhel} != 6
 BuildRequires:  glib2-devel
