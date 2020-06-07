@@ -5,7 +5,7 @@
 
 Name:           gmt
 Version:        6.0.0
-Release:        1%{?dist}
+Release:        2%{?dist}
 Summary:        Generic Mapping Tools
 
 License:        LGPLv3+
@@ -17,10 +17,7 @@ BuildRequires:  gcc
 BuildRequires:  bash-completion
 BuildRequires:  libcurl-devel
 BuildRequires:  netcdf-devel
-# As of 20200218, EPEL-8 doesn't provide GDAL yet.
-%if 0%{?rhel} != 8
 BuildRequires:  gdal-devel
-%endif
 BuildRequires:  pcre-devel
 %if 0%{?rhel} != 6
 BuildRequires:  glib2-devel
@@ -94,6 +91,8 @@ pushd build
 
 
 %changelog
+* Sun Jun 7 2020 seisman <seisman.info@gmail.com> 6.0.0-2
+- Add GDAL support for CentOS 8
 * Fri Nov 1 2019 seisman <seisman.info@gmail.com> 6.0.0-1
 - Update to 6.0.0
 * Wed Oct 23 2019 seisman <seisman.info@gmail.com> 6.0.0rc5-1
