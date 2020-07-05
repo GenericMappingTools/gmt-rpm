@@ -4,8 +4,8 @@
 %endif
 
 Name:           gmt
-Version:        6.0.0
-Release:        2%{?dist}
+Version:        6.1.0
+Release:        1%{?dist}
 Summary:        Generic Mapping Tools
 
 License:        LGPLv3+
@@ -60,7 +60,9 @@ mkdir build
 pushd build
 %{cmake} \
   -DGSHHG_ROOT=%{_datadir}/gshhg-gmt \
+  -DCOPY_GSHHG=off \
   -DDCW_ROOT=%{_datadir}/dcw-gmt \
+  -DCOPY_DCW=off \
   -DGMT_INSTALL_MODULE_LINKS=off \
   -DGMT_INSTALL_TRADITIONAL_FOLDERNAMES=off \
   -DLICENSE_RESTRICTED=LGPL \
@@ -91,6 +93,9 @@ pushd build
 
 
 %changelog
+* Sun Jul 5 2020 seisman <seisman.info@gmail.com> 6.1.0-1
+- Update to 6.1.0
+- Add GDAL support for CentOS 8
 * Sun Jun 7 2020 seisman <seisman.info@gmail.com> 6.0.0-2
 - Add GDAL support for CentOS 8
 * Fri Nov 1 2019 seisman <seisman.info@gmail.com> 6.0.0-1
