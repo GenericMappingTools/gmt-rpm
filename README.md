@@ -11,10 +11,11 @@ which provides a RPM package repository for Fedora/CentOS/RHEL.
 
 - Fedora 30 (i386, x86_64)
 - Fedora 31 (i386, x86_64)
+- Fedora 32 (i386, x86_64)
 - Fedora rawhide (i386, x86_64)
 - EPEL for CentOS 6 (i386, x86_64)
 - EPEL for CentOS 7 (x86_64)
-- EPEL for CentOS 8 (x86_64) (Currently GDAL is not linked due to the unavailability of GDAL from EPEL 8)
+- EPEL for CentOS 8 (x86_64)
 
 ## Usage
 
