@@ -7,11 +7,11 @@ which provides a RPM package repository for Fedora/CentOS/RHEL.
 
 **Fedor Copr Homepage**: https://copr.fedorainfracloud.org/coprs/genericmappingtools/gmt/
 
-## Supported Platforms
+## Currently Supported Platforms
 
-- Fedora 30 (i386, x86_64)
 - Fedora 31 (i386, x86_64)
 - Fedora 32 (i386, x86_64)
+- Fedora 33 (i386, x86_64)
 - Fedora rawhide (i386, x86_64)
 - EPEL for CentOS 6 (i386, x86_64)
 - EPEL for CentOS 7 (x86_64)
@@ -19,7 +19,7 @@ which provides a RPM package repository for Fedora/CentOS/RHEL.
 
 ## Usage
 
-Refer to [the GMT Install Instructions](https://github.com/GenericMappingTools/gmt/blob/master/INSTALL.md).
+Refer to [the GMT Install Instructions](https://github.com/GenericMappingTools/gmt/wiki/Install-latest-GMT-on-RHEL-CentOS).
 
 ## References
 
