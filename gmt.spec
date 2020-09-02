@@ -4,7 +4,7 @@
 %endif
 
 Name:           gmt
-Version:        6.1.0
+Version:        6.1.1
 Release:        1%{?dist}
 Summary:        Generic Mapping Tools
 
@@ -93,6 +93,8 @@ pushd build
 
 
 %changelog
+* Wed Sep 2 2020 seisman <seisman.info@gmail.com> 6.1.1-1
+- Update to 6.1.1
 * Sun Jul 5 2020 seisman <seisman.info@gmail.com> 6.1.0-1
 - Update to 6.1.0
 - Add GDAL support for CentOS 8
