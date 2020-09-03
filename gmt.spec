@@ -54,11 +54,9 @@ such as coastlines, rivers, and political boundaries and optionally country poly
 %prep
 %autosetup
 
-
+%if 0%{?fedora} >= 33
 %build
-mkdir build
-pushd build
-%{cmake} \
+%cmake \
   -DGSHHG_ROOT=%{_datadir}/gshhg-gmt \
   -DCOPY_GSHHG=off \
   -DDCW_ROOT=%{_datadir}/dcw-gmt \
@@ -66,7 +64,28 @@ pushd build
   -DGMT_INSTALL_MODULE_LINKS=off \
   -DGMT_INSTALL_TRADITIONAL_FOLDERNAMES=off \
   -DLICENSE_RESTRICTED=LGPL \
-  -DGMT_OPENMP=on \
+  -DGMT_ENABLE_OPENMP=on \
+  -DGMT_USE_THREADS=on \
+  -DBASH_COMPLETION_DIR=%{completion_dir} \
+%cmake_build
+
+%install
+%cmake_install
+
+%else
+
+%build
+mkdir build
+pushd build
+%cmake \
+  -DGSHHG_ROOT=%{_datadir}/gshhg-gmt \
+  -DCOPY_GSHHG=off \
+  -DDCW_ROOT=%{_datadir}/dcw-gmt \
+  -DCOPY_DCW=off \
+  -DGMT_INSTALL_MODULE_LINKS=off \
+  -DGMT_INSTALL_TRADITIONAL_FOLDERNAMES=off \
+  -DLICENSE_RESTRICTED=LGPL \
+  -DGMT_ENABLE_OPENMP=on \
 %if 0%{?rhel} != 6
   -DGMT_USE_THREADS=on \
 %endif
@@ -74,9 +93,10 @@ pushd build
   ..
 %make_build
 
-
 %install
 %make_install -C build
+%endif
+
 
 
 %ldconfig_scriptlets
