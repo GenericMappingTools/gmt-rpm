@@ -1,0 +1,26 @@
+# Lint the RPM specfile
+
+name: Lint
+
+on:
+  push:
+    branches: [master]
+  pull_request:
+
+jobs:
+  lint:
+    name: Lint the RPM specfile
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout
+      uses: actions/checkout@v2.3.4
+
+    - name: Install rpmlint
+      run: sudo apt install rpmlint
+
+    - name: Lint
+      run: |
+        rpmlint dcw-gmt.spec
+        rpmlint gshhg-gmt.spec
+        rpmlint gmt.spec
