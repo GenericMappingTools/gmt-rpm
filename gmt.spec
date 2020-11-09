@@ -19,9 +19,7 @@ BuildRequires:  libcurl-devel
 BuildRequires:  netcdf-devel
 BuildRequires:  gdal-devel
 BuildRequires:  pcre-devel
-%if 0%{?rhel} != 6
 BuildRequires:  glib2-devel
-%endif
 BuildRequires:  fftw-devel
 BuildRequires:  lapack-devel
 BuildRequires:  blas-devel
@@ -86,9 +84,7 @@ pushd build
   -DGMT_INSTALL_TRADITIONAL_FOLDERNAMES=off \
   -DLICENSE_RESTRICTED=LGPL \
   -DGMT_ENABLE_OPENMP=on \
-%if 0%{?rhel} != 6
   -DGMT_USE_THREADS=on \
-%endif
   -DBASH_COMPLETION_DIR=%{completion_dir} \
   ..
 %make_build
