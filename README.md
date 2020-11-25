@@ -1,6 +1,6 @@
 # The official RPM repository for GMT
 
-[![Build Status](https://travis-ci.org/GenericMappingTools/gmt-rpm.svg?branch=master)](https://travis-ci.org/GenericMappingTools/gmt-rpm)
+![Lint](https://github.com/GenericMappingTools/gmt-rpm/workflows/Lint/badge.svg)
 
 This repository contains the RPM specfiles for the Fedora Copr build system,
 which provides a RPM package repository for Fedora/CentOS/RHEL.
