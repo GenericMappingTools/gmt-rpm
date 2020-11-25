@@ -5,7 +5,7 @@
 
 Name:           gmt
 Version:        6.1.1
-Release:        1%{?dist}
+Release:        2%{?dist}
 Summary:        Generic Mapping Tools
 
 License:        LGPLv3+
@@ -94,7 +94,6 @@ pushd build
 %endif
 
 
-
 %ldconfig_scriptlets
 
 
@@ -109,6 +108,8 @@ pushd build
 
 
 %changelog
+* Tue Nov 24 2020 seisman <seisman.info@gmail.com> 6.1.1-2
+- Rebuild due to GDAL update on Fedora rawhide
 * Wed Sep 2 2020 seisman <seisman.info@gmail.com> 6.1.1-1
 - Update to 6.1.1
 * Sun Jul 5 2020 seisman <seisman.info@gmail.com> 6.1.0-1
