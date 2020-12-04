@@ -9,7 +9,6 @@ which provides a RPM package repository for Fedora/CentOS/RHEL.
 
 ## Currently Supported Platforms
 
-- Fedora 31 (i386, x86_64)
 - Fedora 32 (i386, x86_64)
 - Fedora 33 (i386, x86_64)
 - Fedora rawhide (i386, x86_64)
