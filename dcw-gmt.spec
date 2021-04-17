@@ -1,5 +1,5 @@
 Name:           dcw-gmt
-Version:        1.1.4
+Version:		2.0.0
 Release:        1%{?dist}
 Summary:        Digital Chart of the World (DCW) for GMT
 
@@ -28,5 +28,7 @@ cp -a dcw-*.nc dcw-*.txt %{buildroot}/%{_datadir}/%{name}/
 %{_datadir}/%{name}/
 
 %changelog
+* Sat Apr 17 2021 seisman <seisman.info@gmail.com> 2.0.0-1
+- Update to 2.0.0
 * Fri Oct 11 2019 seisman <seisman.info@gmail.com> 1.1.4-1
 - Initial package
