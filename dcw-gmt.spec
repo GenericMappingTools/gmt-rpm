@@ -24,7 +24,7 @@ mkdir -p %{buildroot}/%{_datadir}/%{name}
 cp -a dcw-*.nc dcw-*.txt %{buildroot}/%{_datadir}/%{name}/
 
 %files
-%doc COPYING.LESSERv3 COPYINGv3 LICENSE.TXT README.TXT ChangeLog
+%doc LICENSE README.md ChangeLog
 %{_datadir}/%{name}/
 
 %changelog
