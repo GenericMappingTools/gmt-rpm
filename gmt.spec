@@ -4,7 +4,7 @@
 %endif
 
 Name:           gmt
-Version:        6.2.0
+Version:        6.3.0
 Release:        1%{?dist}
 Summary:        Generic Mapping Tools
 
@@ -17,6 +17,7 @@ BuildRequires:  gcc
 BuildRequires:  bash-completion
 BuildRequires:  libcurl-devel
 BuildRequires:  netcdf-devel
+BuildRequires:  geos-devel
 BuildRequires:  gdal-devel
 BuildRequires:  pcre-devel
 BuildRequires:  glib2-devel
@@ -108,6 +109,8 @@ pushd build
 
 
 %changelog
+* Sat Nov 20 2021 seisman <seisman.info@gmail.com> 6.3.0-1
+- Bump to 6.3.0
 * Sat Jun 5 2021 seisman <seisman.info@gmail.com> 6.2.0-1
 - Bump to 6.2.0
 * Tue Nov 24 2020 seisman <seisman.info@gmail.com> 6.1.1-2
