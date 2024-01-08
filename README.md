@@ -7,14 +7,7 @@ which provides a RPM package repository for Fedora/CentOS/RHEL.
 
 **Fedor Copr Homepage**: https://copr.fedorainfracloud.org/coprs/genericmappingtools/gmt/
 
-## Currently Supported Platforms
-
-- Fedora 33 (i386, x86_64)
-- Fedora 34 (i386, x86_64)
-- Fedora 35 (i386, x86_64)
-- Fedora rawhide (i386, x86_64)
-- EPEL for CentOS 7 (x86_64)
-- EPEL for CentOS 8 (x86_64)
+For currently supported platforms, visit the link above.
 
 ## Usage
 
